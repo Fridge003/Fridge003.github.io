@@ -55,7 +55,7 @@
 
     <section aria-labelledby="industry-heading">
       <h2 id="industry-heading">Industry Experience</h2>
-      <article class="entry">
+      <article class="entry" id="radixark-experience">
         <div class="entry-heading">
           <h3>RadixArk</h3>
           <p class="date">Mar 2026 – Present</p>
@@ -63,8 +63,17 @@
         <p class="role">Member of Technical Staff</p>
         <p>Palo Alto, California, United States · On-site</p>
         <ul>
-          <li>Member of Founding Team</li>
-          <li><a href="https://github.com/sgl-project/sglang">SGLang</a> development and maintenance.</li>
+          <li>Member of Founding Team; Core developer and maintainer of <a href="https://github.com/sgl-project/sglang">SGLang</a>.</li>
+          <li>Co-led the optimization of GLM-5.2 model on Blackwell hardware. [<a href="https://www.lmsys.org/blog/2026-07-13-glm52-optimization">Blog</a>]</li>
+          <li>Co-led the design and implementation of the parallelism strategy for Kimi-K3 Day 0 support (Prefill PP + Decode CP) [<a href="https://www.lmsys.org/blog/2026-07-27-kimi-k3-day0-support">Blog</a>]</li>
+          <li>Maintainer of Prefill Context Parallelism feature for SGLang. Independently designed and implemented a cleaner version of PCP with CPStrategy abstraction. [<a href="https://github.com/sgl-project/sglang/issues/21788">Roadmap</a>]</li>
+          <li>DeepSeek V4 support and optimization
+            <ul>
+              <li>Implemented MTP speculative decoding and Trtllm MoE runner for DeepSeek V4 Day-0 support. [<a href="https://www.lmsys.org/blog/2026-04-25-deepseek-v4">Blog</a>]</li>
+              <li>Reviewed subsequent optimizations on DeepSeek V4 and helped increase its throughput to 5x compared with Day 0. [<a href="https://pytorch.org/blog/serving-deepseek-v4-on-gb300-with-sglang-5x-higher-throughput-at-the-same-interactivity-since-day-0/">Blog</a>]</li>
+            </ul>
+          </li>
+          <li>Implemented a tvm-ffi wrapper for SGLang's DeepGemm <a href="https://github.com/sgl-project/DeepGEMM">fork</a>, and created a customized PyPI wheel sgl-deep-gemm for more flexible development and usage.</li>
         </ul>
       </article>
       <article class="entry" id="sgl-project-experience">
@@ -119,6 +128,14 @@
       </article>
     </section>
 
+    <section aria-labelledby="talks-heading">
+      <h2 id="talks-heading">Invited Talks</h2>
+      <ul>
+        <li>[Talk Title], <strong><em>[Event / Organization]</em></strong>, [Location], [Year]. <span class="link-placeholder">[Slides / Video]</span></li>
+        <li>[Talk Title], <strong><em>[Event / Organization]</em></strong>, [Location], [Year]. <span class="link-placeholder">[Slides / Video]</span></li>
+      </ul>
+    </section>
+
     <section aria-labelledby="research-heading">
       <h2 id="research-heading">Research Experience</h2>
       <article class="entry">
@@ -144,41 +161,6 @@
           <li>Researched music generation with VAE-based models.</li>
         </ul>
       </article>
-    </section>
-
-    <section aria-labelledby="publications-heading">
-      <h2 id="publications-heading">Blog Publications</h2>
-      <!-- Replace each figure placeholder with an img; add real links when available. -->
-      <article class="publication">
-        <div class="publication-image placeholder-image" role="img" aria-label="Publication figure placeholder">
-          <span>[Publication Figure]</span>
-        </div>
-        <div>
-          <h3>[Publication Title]</h3>
-          <p>[Author], <strong>Baizhou Zhang</strong>, [Author]</p>
-          <p><em>[Conference / Journal]</em>, <strong>[Year]</strong>. [Publication Type]</p>
-          <p class="publication-links"><span class="link-placeholder">[Paper]</span> <span class="link-placeholder">[Code]</span></p>
-        </div>
-      </article>
-      <article class="publication">
-        <div class="publication-image placeholder-image" role="img" aria-label="Publication figure placeholder">
-          <span>[Publication Figure]</span>
-        </div>
-        <div>
-          <h3>[Publication Title]</h3>
-          <p>[Author], <strong>Baizhou Zhang</strong>, [Author]</p>
-          <p><em>[Conference / Journal]</em>, <strong>[Year]</strong>. [Publication Type]</p>
-          <p class="publication-links"><span class="link-placeholder">[Paper]</span> <span class="link-placeholder">[Code]</span></p>
-        </div>
-      </article>
-    </section>
-
-    <section aria-labelledby="talks-heading">
-      <h2 id="talks-heading">Invited Talks</h2>
-      <ul>
-        <li>[Talk Title], <strong><em>[Event / Organization]</em></strong>, [Location], [Year]. <span class="link-placeholder">[Slides / Video]</span></li>
-        <li>[Talk Title], <strong><em>[Event / Organization]</em></strong>, [Location], [Year]. <span class="link-placeholder">[Slides / Video]</span></li>
-      </ul>
     </section>
   </main>
   <footer><p>© [Year] Baizhou Zhang</p></footer>
